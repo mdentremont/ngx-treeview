@@ -40,4 +40,8 @@ export class BookComponent implements OnInit {
     ngOnInit() {
         this.items = this.service.getBooks();
     }
+
+    onFilterChange(value: string) {
+        console.log('filter:', value);
+    }
 }
